@@ -13,7 +13,7 @@ namespace Student_Management_System
 
 		public bool insertStudent(string fname, string lname, DateTime bdate, string gender, string phone, string address, byte[] img)
 		{
-			MySqlCommand command = new MySqlCommand("INSERT INTO `student`(`StdFristName`, `StdLastName`, `Birthdate`, `Gender`, `Phone`, `Address`, `Photo`) VALUES (@fn,@ln,@bd,@gd,@ph,@adr,@img)", connect.getconnection);
+			MySqlCommand command = new MySqlCommand("INSERT INTO `student`(`StdFirstName`, `StdLastName`, `Birthdate`, `Gender`, `Phone`, `Address`, `Photo`) VALUES (@fn,@ln,@bd,@gd,@ph,@adr,@img)", connect.getconnection);
 
 			// @fn,@ln,@bd,@gd,@ph,@adr,@img
 
